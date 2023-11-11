@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #FFBB5C;
+    --secondary-color: #FF9B50;
+    --tertiary-color: #E25E3E;
+    --quaternary-color: #C63D2F;
+    --navbar-color: #FF9B50;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--navbar-color);
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: black;    
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: var(--quaternary-color);
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    color: black;
+}
+
+
+/* Hero */
+
+.hero .container {
+    background: url(../images/hero2.jpg) no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center center;    
+}
+
+.hero .hero-content {
+    position: relative;
+    left: 2%;
+    top: 10%;
+}
+
+.hero .hero-content .hero-list {
+    margin-bottom: 20px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+/* About */
+.about {    
+    padding: 5px 0px 0px 0px;
+}
+
+.about-header h1 {
+    text-align: left;
+    padding: 40px 600px 10px 100px;
+}
+
+.about .container {
+    background: white;    
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0px;
+}
+
+.about-image {
+    max-width: 75%;
+}
+
+.about-image img {
+    border-radius: 20px;
+}
+
+.church-info {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.church-info img {
+    max-width: 25%;
+    border-radius: 30px;
+}
+
+/* Latest News */
+.latest-news {
+    padding: 0px;
+}
+
+.latest-news .container {
+    background: black;    
+    padding: 40px 0px;
+}
+
+.latest-news h2 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.latest-news-content {    
+    padding: 40px 0px;
+}
+
+.latest-news-content video {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.latest-news-content img {
+    max-width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Events */
+.events {
+    padding: 0px;
+}
+
+.events .container {
+    background: #434242;
+    padding: 40px;
+}
+
+.events-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.events-title {
+    float: left;
+    color: white;
+}
+
+.events-more a {
+    color: white;
+    float: right;
+    transition: 0.5s;
+}
+
+.events-more a:hover {
+    color: var(--tertiary-color);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);    
+    gap: 10px;
+    text-align: center;
+    min-height: 400px;
+}
+
+/* Card */
+.card {    
+    background: black;        
+    border-radius: 30px;
+    padding: 20px 0px;    
+}
+
+.card h3 {
+    color: white;    
+}
+
+.card p {
+    padding: 20px 0px;
+    color: white;
+}
+
+.card i {
+    padding: 50px 0px 0px 0px;    
+    color: var(--secondary-color);
+}
+
+
+/* Worship */
+.worship {
+    padding: 10px;
+}
+
+.worship .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.worship .map img {
+    max-height: 100%;    
+    padding-right: 5%;
+}
+
+
+/* Stream */
+.stream {
+    padding: 10px
+}
+
+.stream .container a {
+    color: var(--tertiary-color);
+}
+
+
+/* Footer */
+.footer {
+    padding: 5px 0px 0px 0px;
+}
+
+.footer .container {    
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+/* Utility Classes */
+.container {
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;    
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--tertiary-color);
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    color: black;
+}
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;    
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;    
+    line-height: 1.4;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.text-lg {
+    font-size: 1.8rem;    
+    line-height: 1.4;
+    font-weight: bold;
+    color: whitesmoke;    
+}
+
+.text-md {
+    font-size: 1.2rem;    
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.text-center {
+    text-align: center;
+}
